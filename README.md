@@ -8,7 +8,15 @@ As mentioned above, AlphabetSoup provided the charity_data.csv which we processe
 ## Results
 - The target variable is the 'IS_SUCCESSFUL' column
 - The variables that are considered features are:
-
+1. APPLICATION_TYPE -- AlphabetSoup application type
+2. AFFILIATION -- affiliated sector of industry
+3. CLASSIFICATION -- government organization classification
+4. USE_CASE -- use case for funding
+5. ORGANIZATION -- organization type
+6. STATUS -- this indicates if the organization is active or not
+7. INCOME_AMT -- income classification
+8. SPECIAL_CONSIDERATIONS -- special consideration for application
+9. ASK_AMT -- funding amount requested
 
 
 - The variables that are neither targets nor features, and therefore do not pertain to this model are:
