@@ -35,7 +35,7 @@ As mentioned above, AlphabetSoup provided the charity_data.csv which we processe
 4. Output layer -- activation function: tanh
 5. Epochs: 60
 
-- The number of neurons was selected based on the rule of thumb: for basic neural networks designate two to three times the amount of neurons in the hidden layer as the number of inputs. About half the number of neurons (42) were used in the first hidden layer as compared to the input layer (84). A quarter of the number of neurons in the input layer (84) was used in the second hidden layer (21). To increase the accuracy, a second hidden layer was added to the model. The number of epochs was increased from 30 in the original model, to 60 to decrease the loss and increase the accuracy of the model.
+- The number of neurons was selected based on the rule of thumb: for basic neural networks designate two to three times the amount of neurons in the hidden layer as the number of inputs. About half the number of neurons (42) were used in the first hidden layer as compared to the input layer (84). A quarter of the number of neurons in the input layer (84) was used in the second hidden layer (21). To increase the accuracy, a second hidden layer was added to the model. The number of epochs was increased from 30 in the original model to 60, to decrease the loss and increase the accuracy of the model.
 
 ![Model Parameters](https://user-images.githubusercontent.com/88804543/147158671-8d4c0db7-f44d-40e0-8566-6c7997f0bbd6.png)
 
@@ -72,7 +72,7 @@ Random Forest Classifier Parameters:
 
 ## Summary
 
-The deep learning model was unable to meet the threshold accuracy of 75%. The first iteration of the model achieved 73% accuracy which is close to the threshold but below it. After 4 optimization attempts, the accuracy of the model remained the same at 73%. The random forest classifier was able to achieve 71% accuracy in a fraction of the time compared to the deep learning model and with less code.
+The deep learning model was unable to meet the threshold accuracy of 75%. The first iteration of the model achieved 73% accuracy which is close to the threshold but below it. After 4 optimization attempts, the accuracy of the model remained the same at 73%. The random forest classifier was able to achieve 71% accuracy in a fraction of the time compared to the deep learning model and with less code. The accuracy of the deep learning model could be improved with more time to adjust the input feature values. More time needs to be spent binning the income amount feature. There is an extremely wide spread in the data for the income amount feature.
 
 
 
