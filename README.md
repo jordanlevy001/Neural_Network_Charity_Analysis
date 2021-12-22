@@ -4,7 +4,7 @@
 
 The goal of this project was to create a binary classifier capable of predicting whether applicants will be successful if funded by AlphabetSoup. All of the organizations included in the charity_data.csv provided by AlphabetSoup have received funding from AlphabetSoup at some point in time. Our goal is to be able to predict with at least 75% accuracy if the organization will be successful if they are funded by AlphabetSoup.
 
-As mentioned above, AlphabetSoup provided the charity_data.csv which we processed/cleaned for the model. We used one hot encoder and other methods to clean the data. We also removed unneccessary features as well as binning features with too many unique values. We then used tensorflow to build the model, as well as a random forest classifier.
+As mentioned above, AlphabetSoup provided the charity_data.csv which we processed/cleaned for the model. We used one hot encoder and other methods to clean the data. We also removed unneccessary features as well as binning features with too many unique values. We then used tensorflow to build the deep learning model, as well as a random forest classifier for comparison.
 
 ## Results
 
@@ -24,7 +24,7 @@ As mentioned above, AlphabetSoup provided the charity_data.csv which we processe
 - The variables that are neither targets nor features, and therefore do not pertain to this model are:
 1. EIN -- this is an identification column
 2. NAME -- this is an identification column
-3. STATUS -- this indicates if the organization is active or not
+3. STATUS -- this indicates if the organization is active or not (irrelevant for this analysis)
 
 #### Compiling, Training, Evaluating the Model
 
@@ -33,8 +33,9 @@ As mentioned above, AlphabetSoup provided the charity_data.csv which we processe
 2. First hidden layer -- 42 neurons, activation function: tanh
 3. Second hidden layer -- 21 neurons, activation function: tanh
 4. Output layer -- activation function: tanh
+5. Epochs: 60
 
-- The number of neurons was selected based on the rule of thumb: for basic neural networks designate two to three times the amount of neurons in the hidden layer as the number of inputs. About half the number of neurons were used in the first hidden layer as the input layer. A quarter of the number of neurons in teh input layer was used in the second hidden layer.
+- The number of neurons was selected based on the rule of thumb: for basic neural networks designate two to three times the amount of neurons in the hidden layer as the number of inputs. About half the number of neurons (42) were used in the first hidden layer as compared to the input layer (84). A quarter of the number of neurons in the input layer (84) was used in the second hidden layer (21). To increase the accuracy, a second hidden layer was added to the model. The number of epochs was increased from 30 in the original model, to 60 to decrease the loss and increase the accuracy of the model.
 
 ![Model Parameters](https://user-images.githubusercontent.com/88804543/147158671-8d4c0db7-f44d-40e0-8566-6c7997f0bbd6.png)
 
