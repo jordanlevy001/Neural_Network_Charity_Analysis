@@ -39,6 +39,23 @@ As mentioned above, AlphabetSoup provided the charity_data.csv which we processe
 
 - The model prior to optimization achieved 73% accuracy, which is below the 75% accuracy threshold. The optimized model achieved 72% accuracy, which is also below the threshold. The random forest classifier achieved a 71% accuracy score. The random forest classifier was significantly more efficient, completing in 1 second or less.  
 
+
+First Model Accuracy:
+
+![First Model Accuracy](https://user-images.githubusercontent.com/88804543/147027289-d8ce4701-0466-44b9-a85e-df56abb32744.png)
+
+
+Optimized Model Accuracy:
+
+![Optimized Model Accuracy](https://user-images.githubusercontent.com/88804543/147027315-b206ee00-bd8e-4187-9720-dcf62106df54.png)
+
+
+Random Forest Classifier Accuracy:
+
+![RFC Accuracy](https://user-images.githubusercontent.com/88804543/147027343-8c46ce24-023f-4778-9da8-a0c3c0b119fb.png)
+
+
+
 - Steps taken to increase model performance:
 1. The 'STATUS' feature was removed
 2. A third hidden layer was added
