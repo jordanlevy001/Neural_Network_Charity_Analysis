@@ -28,7 +28,7 @@ As mentioned above, AlphabetSoup provided the charity_data.csv which we processe
 
 #### Compiling, Training, Evaluating the Model
 
--The model:
+- The model:
 1. First hidden layer -- 80 neurons, activation function: tanh
 2. Second hidden layer -- 30 neurons, activation function: tanh
 3. Third hidden layer -- 16 neurons, activation function: tanh
