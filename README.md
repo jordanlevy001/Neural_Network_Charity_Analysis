@@ -37,7 +37,7 @@ As mentioned above, AlphabetSoup provided the charity_data.csv which we processe
 ![Model Parameters](https://user-images.githubusercontent.com/88804543/147017568-9e226f22-9e31-49e1-a860-61755e0e3d6f.png)
 
 
-- The optimized model was still unable to meet the 75% accuracy threshold.
+- The model prior to optimization achieved 73% accuracy. The model after optimization was still unable to meet the 75% accuracy threshold. The optimized model achieved 72% accuracy. The random forest classifier achieved a 71% accuracy score.
 
 - Steps taken to increase model performance:
 1. The 'STATUS' feature was removed
