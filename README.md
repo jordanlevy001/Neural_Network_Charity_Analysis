@@ -1,4 +1,4 @@
-# Neural Network Charity Analysis
+# Neural Network Analysis of Successful Funding
 
 ## Project Overview
 
@@ -37,7 +37,7 @@ As mentioned above, AlphabetSoup provided the charity_data.csv which we processe
 ![Model Parameters](https://user-images.githubusercontent.com/88804543/147017568-9e226f22-9e31-49e1-a860-61755e0e3d6f.png)
 
 
-- The model prior to optimization achieved 73% accuracy. The model after optimization was still unable to meet the 75% accuracy threshold. The optimized model achieved 72% accuracy. The random forest classifier achieved a 71% accuracy score.
+- The model prior to optimization achieved 73% accuracy, which is below the 75% accuracy threshold. The optimized model achieved 72% accuracy, which is also below the threshold. The random forest classifier achieved a 71% accuracy score. The random forest classifier was significantly more efficient, completing in 1 second or less.  
 
 - Steps taken to increase model performance:
 1. The 'STATUS' feature was removed
