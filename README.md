@@ -55,6 +55,10 @@ Random Forest Classifier Accuracy:
 
 ![RFC Accuracy](https://user-images.githubusercontent.com/88804543/147027343-8c46ce24-023f-4778-9da8-a0c3c0b119fb.png)
 
+Random Forest Classifier Parameters:
+
+![RFC Parameters](https://user-images.githubusercontent.com/88804543/147159008-58887aa6-a336-4c3e-a6df-98cd76605ada.png)
+
 
 - Steps taken to increase model performance:
 1. The 'STATUS' feature was removed
