@@ -34,7 +34,7 @@ As mentioned above, AlphabetSoup provided the charity_data.csv which we processe
 3. Second hidden layer -- 21 neurons, activation function: tanh
 4. Output layer -- activation function: tanh
 
-- The number of neurons was selected based on rule of thumb, for basic neural networks designate two to three times the amount of neurons in the hidden layer as the number of inputs.
+- The number of neurons was selected based on the rule of thumb: for basic neural networks designate two to three times the amount of neurons in the hidden layer as the number of inputs. About half the number of neurons were used in the first hidden layer as the input layer. A quarter of the number of neurons in teh input layer was used in the second hidden layer.
 
 ![Model Parameters](https://user-images.githubusercontent.com/88804543/147158671-8d4c0db7-f44d-40e0-8566-6c7997f0bbd6.png)
 
@@ -56,6 +56,7 @@ Random Forest Classifier Accuracy:
 ![RFC Accuracy](https://user-images.githubusercontent.com/88804543/147027343-8c46ce24-023f-4778-9da8-a0c3c0b119fb.png)
 
 Random Forest Classifier Parameters:
+- The highest number of estimators recommended (128) was used. And a random state of 78.
 
 ![RFC Parameters](https://user-images.githubusercontent.com/88804543/147159008-58887aa6-a336-4c3e-a6df-98cd76605ada.png)
 
@@ -65,13 +66,12 @@ Random Forest Classifier Parameters:
 2. An additional hidden layer was added
 3. Increased the number of epochs from 30 to 60
 4. The activation function of all hidden layers was changed from "relu" to "tanh"
-5. The output layer activation function was changed from "relu" to "tanh"
-6. Utilized a Random Forest Classifier instead of the neural network
+5. The output layer activation function was changed from "sigmoid" to "tanh"
+6. Utilized a Random Forest Classifier
 
 ## Summary
 
-The deep learning model was unable to meet the threshold accuracy of 75%. The first iteration of the model achieved 73% accuracy which is close to the threshold but below it. 
-
+The deep learning model was unable to meet the threshold accuracy of 75%. The first iteration of the model achieved 73% accuracy which is close to the threshold but below it. After 4 optimization attempts, the accuracy of the model remained the same at 73%. The random forest classifier was able to achieve 71% accuracy in a fraction of the time compared to the deep learning model and with less code.
 
 
 
