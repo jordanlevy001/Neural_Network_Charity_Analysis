@@ -28,16 +28,22 @@ As mentioned above, AlphabetSoup provided the charity_data.csv which we processe
 
 #### Compiling, Training, Evaluating the Model
 
-The model:
+-The model:
 1. First hidden layer -- 80 neurons, activation function: tanh
 2. Second hidden layer -- 30 neurons, activation function: tanh
 3. Third hidden layer -- 16 neurons, activation function: tanh
 4. Output layer -- activation function: sigmoid
 
+![Model Parameters](https://user-images.githubusercontent.com/88804543/147017568-9e226f22-9e31-49e1-a860-61755e0e3d6f.png)
 
-Steps taken to increase model performance:
+
+- The optimized model was still unable to meet the 75% accuracy threshold.
+
+- Steps taken to increase model performance:
 1. The 'STATUS' feature was removed
 2. A third hidden layer was added
-3. The activation functions of all hidden layers was "tanh"
+3. Increased the number of epochs from 30 to 60
+4. The activation function of all hidden layers was changed from "relu" to "tanh"
+5. Utilized a Random Forest Classifier instead of the neural network
 
 ## Summary
