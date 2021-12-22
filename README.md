@@ -28,16 +28,17 @@ As mentioned above, AlphabetSoup provided the charity_data.csv which we processe
 
 #### Compiling, Training, Evaluating the Model
 
-- The model:
-1. First hidden layer -- 80 neurons, activation function: tanh
-2. Second hidden layer -- 30 neurons, activation function: tanh
-3. Third hidden layer -- 16 neurons, activation function: tanh
-4. Output layer -- activation function: sigmoid
+- The optimized model:
+1. Input layer -- 84 neurons, activation function: tanh
+2. First hidden layer -- 42 neurons, activation function: tanh
+3. Second hidden layer -- 21 neurons, activation function: tanh
+4. Output layer -- activation function: tanh
 
-![Model Parameters](https://user-images.githubusercontent.com/88804543/147017568-9e226f22-9e31-49e1-a860-61755e0e3d6f.png)
+- The number of neurons was selected based on rule of thumb, for basic neural networks designate two to three times the amount of neurons in the hidden layer as the number of inputs.
 
+![Model Parameters](https://user-images.githubusercontent.com/88804543/147158671-8d4c0db7-f44d-40e0-8566-6c7997f0bbd6.png)
 
-- The model prior to optimization achieved 73% accuracy, which is below the 75% accuracy threshold. The optimized model achieved 72% accuracy, which is also below the threshold. The random forest classifier achieved a 71% accuracy score. The random forest classifier was significantly more efficient, completing in 1 second or less. The neural network model took multiple minutes to run. Thus the random forest classifier was faster and achieved roughly the same accuracy.
+- The model prior to optimization achieved 73% accuracy, which is below the 75% accuracy threshold. The optimized model also achieved 73% accuracy, which again is below the threshold. The random forest classifier achieved a 71% accuracy score. The random forest classifier was significantly more efficient, completing in 1 second or less. The neural network model took multiple minutes to run. Thus the random forest classifier was faster and achieved roughly the same accuracy.
 
 
 First Model Accuracy:
@@ -47,7 +48,7 @@ First Model Accuracy:
 
 Optimized Model Accuracy:
 
-![Optimized Model Accuracy](https://user-images.githubusercontent.com/88804543/147027315-b206ee00-bd8e-4187-9720-dcf62106df54.png)
+![Optimized Model Accuracy](https://user-images.githubusercontent.com/88804543/147158619-d793e670-00eb-4b50-95db-527d5065afda.png)
 
 
 Random Forest Classifier Accuracy:
@@ -60,6 +61,22 @@ Random Forest Classifier Accuracy:
 2. An additional hidden layer was added
 3. Increased the number of epochs from 30 to 60
 4. The activation function of all hidden layers was changed from "relu" to "tanh"
-5. Utilized a Random Forest Classifier instead of the neural network
+5. The output layer activation function was changed from "relu" to "tanh"
+6. Utilized a Random Forest Classifier instead of the neural network
 
 ## Summary
+
+The deep learning model was unable to meet the threshold accuracy of 75%. The first iteration of the model achieved 73% accuracy which is close to the threshold but below it. 
+
+
+
+
+
+
+
+
+
+
+
+
+
